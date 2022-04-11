@@ -88,6 +88,7 @@ a {
 }
 
 .menu {
+  display: none;
   position: absolute;
   left: 133px;
   top: 0;
