@@ -13,9 +13,11 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     
-    color: var(--main-text-color);
+    color: var(--primery-text-color);
     background-color: var(--primery-background-color);
-    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
 }
 
 ul {

@@ -1,0 +1,25 @@
+.about .pre-title {
+    color: var(--primery-title-color);
+    &::before{
+        background-color:var(--primery-title-color);
+    }
+
+}
+
+.about {
+    & .section-title{
+    
+    font-size: 28px;
+    line-height: 1.17;
+    max-width: 330px;
+   
+    }
+    & .after-title {
+        font-size: 16px;
+        line-height: 1.62;
+        margin-bottom: 20px;
+    }
+   & .text{
+       margin-bottom: 40px;
+   }
+}

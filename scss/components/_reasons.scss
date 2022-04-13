@@ -1,0 +1,44 @@
+.reasons .pre-title {
+    color: var(--primery-title-color);
+
+    &::before {
+        background-color: var(--primery-title-color);
+    }
+}
+.reasons .section-title{
+    font-size: 42px;
+    line-height:1.17;
+}
+.reasons .after-title{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    margin-bottom: 44px;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        background-color: #F7F7F7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+
+    }
+    &__text{ 
+        font-size: 11px;
+        line-height: 1.36;
+        text-align: center;
+        color: var(--primery-title-color);
+    }
+    &__number {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.36;
+        text-align: center;
+        color: var(--primery-title-color);
+    }
+}
