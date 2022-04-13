@@ -322,14 +322,23 @@ a {
 .reasons-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .reasons-list__item {
   background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px 30px;
+  padding: 20px 32px;
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.reasons-list__item:nth-child(2n) {
+  position: relative;
+  top: 30px;
 }
 
 .reasons-list__text {
@@ -340,10 +349,35 @@ a {
 }
 
 .reasons-list__number {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  text-align: center;
   color: var(--primery-title-color);
+  margin-bottom: 6px;
+}
+
+.reasons-list__number::after {
+  content: "+";
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+.reasons-list__item sup {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-left: 2px;
+}
+
+.reasons .conteiner {
+  padding-bottom: 114px;
 }
 /*# sourceMappingURL=main.css.map */
