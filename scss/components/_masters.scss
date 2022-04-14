@@ -1,0 +1,14 @@
+.masters {
+    .conteiner{
+        background-color: #F7F7F7;
+    }
+    .pre-title{
+        color: var(--primery-title-color);
+        &::before{
+            background-color: var(--primery-title-color);
+        }
+    }
+    .section-title{
+        @include font(null, 700, 1.17, 0.05em);
+    }
+}
