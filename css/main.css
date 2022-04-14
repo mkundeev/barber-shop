@@ -60,6 +60,7 @@ a {
 .section-title {
   font-family: 'Raleway';
   font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--primery-title-color);
   margin-bottom: 20px;
@@ -69,8 +70,8 @@ a {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-weight: 600;
   font-size: 11px;
+  font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.6);
@@ -93,8 +94,8 @@ a {
   background-color: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  font-weight: 600;
   font-size: 12px;
+  font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -131,7 +132,7 @@ a {
   position: absolute;
   left: 133px;
   top: 0;
-  width: 100%;
+  width: 75%;
   background-color: var(--primery-white);
   padding-top: 118px;
   padding-left: 50px;
@@ -155,10 +156,10 @@ a {
 .nav-menu,
 .nav-phone {
   display: block;
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   line-height: 1.39;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   color: var(--primery-title-color);
   margin-bottom: 24px;
 }
@@ -171,28 +172,28 @@ a {
   margin-bottom: 24px;
 }
 
-.nav-social__item {
+.nav-social-wrap {
   display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.36;
-  color: var(--primery-title-color);
-  letter-spacing: 0.2em;
-  margin-bottom: 24px;
 }
 
-.nav-social__item.current::before {
+.nav-social-wrap::before {
   content: '';
   display: block;
   background-color: var(--primery-title-color);
   height: 1px;
   width: 60px;
+  margin-right: 20px;
   margin-right: 40px;
+  margin-top: 10px;
 }
 
-.nav-social__item:nth-child(2) {
-  margin-left: 100px;
+.nav-social__item {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primery-title-color);
+  margin-bottom: 24px;
 }
 
 .hero .conteiner {
@@ -201,7 +202,7 @@ a {
   padding-right: 143px;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-bcg-480.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -214,8 +215,9 @@ a {
 .hero .section-title {
   color: var(--primery-white);
   font-size: 48px;
-  line-height: 1.17;
-  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
 
@@ -236,13 +238,16 @@ a {
 
 .about .section-title {
   font-size: 28px;
-  line-height: 1.17;
+  font-weight: 400;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
   max-width: 330px;
 }
 
 .about .after-title {
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
 
@@ -260,15 +265,17 @@ a {
 
 .price .section-title {
   font-size: 42px;
+  font-weight: 600;
   line-height: 1.17;
+  letter-spacing: 0.1em;
   color: var(--primery-white);
   margin-bottom: 44px;
 }
 
-.price-list {
+.price-wrap {
   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-  padding: 30px;
   margin-bottom: 50px;
+  padding: 30px;
 }
 
 .price-list__item:not(:last-child) {
@@ -290,6 +297,10 @@ a {
   flex-grow: 1;
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.price-list + .price-list {
+  margin-top: 20px;
 }
 
 .price .btn {
@@ -339,7 +350,9 @@ a {
 
 .reasons-list__text {
   font-size: 11px;
+  font-weight: 400;
   line-height: 1.36;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--primery-title-color);
 }
@@ -348,9 +361,10 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: 700;
   font-size: 42px;
+  font-weight: 700;
   line-height: 1.36;
+  letter-spacing: 0.02em;
   color: var(--primery-title-color);
   margin-bottom: 6px;
 }
@@ -358,18 +372,11 @@ a {
 .reasons-list__number::after {
   content: "+";
   color: var(--accent-color);
-  font-weight: 600;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.38;
+  letter-spacing: 0.02em;
   margin-left: 2px;
   margin-top: 5px;
-}
-
-.reasons-list__item sup {
-  color: var(--accent-color);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.38;
-  margin-left: 2px;
 }
 /*# sourceMappingURL=main.css.map */

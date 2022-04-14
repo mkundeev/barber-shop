@@ -15,9 +15,7 @@ body {
     
     color: var(--primery-text-color);
     background-color: var(--primery-background-color);
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+    @include font(14px, null, 1.86, 0.02em);
 }
 
 ul {

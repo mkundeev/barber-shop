@@ -1,0 +1,14 @@
+@mixin font($fs :14px, $fw:400, $lh:1.86, $ls:0.02em) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin line($bgc) {
+    content: '';
+    display: block;
+    background-color: $bgc;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+}

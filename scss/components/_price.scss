@@ -6,16 +6,18 @@
     background-size: cover;
 }
 .price .section-title{
-    font-size: 42px;
-    line-height: 1.17;
+    @include font(42px, 600, 1.17, 0.1em);
     color: var(--primery-white);
     margin-bottom: 44px;
 }
 
-.price-list {
+.price-wrap {
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    padding: 30px;
     margin-bottom: 50px;
+    padding: 30px;
+}
+.price-list {
+    
     &__item:not(:last-child){
         margin-bottom: 20px;
     }
@@ -36,6 +38,10 @@
         margin-right: 6px;
     }
 }
+.price-list + .price-list {
+    margin-top: 20px;
+}
+
 .price .btn{
     color: var(--primery-white);
     position: relative;
