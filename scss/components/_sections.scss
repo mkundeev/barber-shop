@@ -28,7 +28,7 @@
 .btn {
 
     height: 40px;
-    min-width: 194px;
+    width: 194px;
 
     display: block;
     background-color: transparent;
@@ -37,4 +37,10 @@
 
     @include font(12px, 600, 1.33, 0.09em);
     text-transform: uppercase;
+    @include tran(color);
+    @include tran(background-color);
+    &:hover{
+        color: var(--primery-white);
+        background-color: var(--accent-color);
+    }
 }

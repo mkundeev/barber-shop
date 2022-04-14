@@ -1,0 +1,42 @@
+.contacts{
+
+    .conteiner{
+    background-image: url('../../img/contacts-bg-480.png');
+    background-color: #191C26;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .section-title{
+        @include font(42px);
+        color: var(--primery-white);
+        margin-bottom: 40px;
+    }
+}
+.address{
+    margin-bottom: 44px;
+}
+
+.address-list__item + .address-list__item{
+    margin-top: 20px;
+}
+.address-list__item {
+@include font(18px, null, 1.67, 0.02em);
+color: #9DA4BD;
+display: flex;
+align-items: center;
+}
+.address-list__icon{   
+    margin-right: 16px;
+}
+.address-list__link.mail {
+    text-decoration: underline;
+}
+.pre-title.time{
+    margin-bottom: 20px;
+    color: var(--primery-white);
+}
+.schedule{
+@include font(18px, null, 1.67, 0.02em);
+color: #9DA4BD;
+}

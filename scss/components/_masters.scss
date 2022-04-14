@@ -9,6 +9,54 @@
         }
     }
     .section-title{
-        @include font(null, 700, 1.17, 0.05em);
+        @include font(42px);
     }
+}
+.masters-list{
+    &__photo{
+        margin-bottom: 30px;
+    }
+    &__name{
+        margin-bottom: 8px;
+        @include font(18px, null, 1.39);
+        text-align: center;
+    }
+    &__position{
+        color: var(--accent-color);
+        line-height: 1.36;
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+    &__item:not(:last-child){
+        margin-bottom: 64px;
+    }
+}
+
+.sm-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    &__item{
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+        background-color: var(--primery-white);
+        border-radius: 50%;
+    }
+    &__link{
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    &__icon {
+        fill: var(--primery-title-color);
+        @include tran(fill);
+    }
+    &__link:hover &__icon{
+        fill: var(--accent-color);
+    }
+
 }

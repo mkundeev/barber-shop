@@ -1,0 +1,12 @@
+.photo{
+    .pre-title{
+        @include font(11px, 600, 1.91, 0.1em);
+        color: var(--primery-title-color);
+        &::before{
+            background-color: var(--primery-title-color);
+        }
+    }
+}
+.photo-list__item:not(:last-child){
+        margin-bottom: 30px;
+}

@@ -7,7 +7,7 @@
 }
 
 .header__container {
-    
+    position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
     
@@ -27,11 +27,12 @@
 }
 
 .menu {
-    display: none;
+    // display: none;
     position: absolute;
     left: 133px;
     top: 0;
-    width: 75%;
+    width: 347px;
+    
 
     background-color: var(--primery-white);
     padding-top: 118px;
@@ -41,7 +42,7 @@
     &-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        
         height: 100%;
 
     }
@@ -56,18 +57,31 @@
 }
 
 .nav-menu,
-.nav-phone{
+.nav-phone {
     display: block;
     @include font(18px, 600, 1.39);
     color: var(--primery-title-color);
-    margin-bottom: 24px;
+    margin-bottom: 64px;
 }
 .nav-menu__item:not(:last-child){
     margin-bottom: 24px;
 }
+.nav-menu__item{
+    @include tran(color);
 
-.menu .btn{
+    &:hover {
+    color: var(--accent-color);
+    }
+}
+.nav-phone{
     margin-bottom: 24px;
+    @include tran(color);
+    &:hover{
+        color: var(--accent-color);
+    }
+}
+.menu .btn{
+    margin-bottom: 64px;
 }
 
 .nav-social-wrap {

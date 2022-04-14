@@ -1,0 +1,28 @@
+.footer{
+    .conteiner{
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+    .nav-social{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: end;
+
+    }
+    .nav-social__item{
+        @include font(11px, 600, 1.36, 0.2em);
+        display: flex;
+        align-items: center;
+    }
+    .nav-social__item:first-child{
+        margin-right: 40px;
+    &:before{
+        @include line(#303030);
+        margin-right: 40px; 
+    }
+    }
+}
+.footer-copyright {
+@include font(11px, 600, 1.36, 0.2em);
+color: #9DA4BD;
+}
