@@ -146,6 +146,10 @@ a {
   height: 100vh;
 }
 
+.menu.is-close {
+  display: none;
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;

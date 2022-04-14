@@ -39,6 +39,9 @@
     padding-left: 50px;
     
     height: 100vh;
+    &.is-close {
+    display: none;  
+    }
     &-container{
         display: flex;
         flex-direction: column;
