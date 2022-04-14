@@ -20,21 +20,19 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    
 
     &__item{
         background-color: #F7F7F7;
-        display: flex;
-        flex-direction: column;
        
-        
         padding: 20px 32px;
         flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
-        margin-bottom: 30px;
+        
+        height: 133px;
         &:nth-child(2n){
-           position: relative;
-           top: 30px;
+        
+        margin-top: 30px;
         }
     }
     
@@ -74,7 +72,4 @@
     font-size: 16px;
     line-height: 1.38;
     margin-left: 2px;
-}
-.reasons .conteiner{
-    padding-bottom: 114px;
 }
