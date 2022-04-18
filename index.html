@@ -14,7 +14,7 @@
     <body>
 <!-- header -->
         <header class="header">
-            <div class="conteiner header__container">
+            <div class="container">
             <a href="" class="header-logo"> 
                 <svg class="logo-icon" width="69" height="55">
                     <use href="./img/icons.svg#icon-logo"></use>
@@ -60,7 +60,7 @@
         <main>
 <!-- hero -->
             <div class="hero">
-                <div class="conteiner">
+                <div class="container">
                     <p class="pre-title" lang="en">A hair salon for men in Kyiv</p>
                     <p class="section-title">BarberShop</p>
                     <p class="text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
@@ -68,19 +68,37 @@
             </div>
 <!-- about -->
             <div class="section about">
-                <div class="conteiner">
-                <p class="pre-title">о нас</p>
-                <p class="section-title">Лучший Барбершоп твоего города</p>
-                <p class="after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p class="text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь
-                в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button type="button" class="btn">онлайн-запись</button>  
+                <div class="container">
+                    <div class="about-photo">
+                        <picture class="about-img">
+                            <source srcset=" ./img/about1-des-540.jpg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/about1-tablet-660.jpg" media="(min-width: 768px)" />
+                            <img  src="./img/about1-tablet-660.jpg"
+                                alt="фото" />
+                        </picture>
+                        <picture  class="about-img">
+                            <source srcset="./img/about2-des-540.jpg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/about2-tablet-660.jpg" media="(min-width: 768px)" />
+                            <img src="./img/about2-tablet-660.jpg"
+                                alt="фото" />
+                        </picture>
+                    </div>
+                    <div class="about-article">
+                        <p class="pre-title">о нас</p>
+                        <p class="section-title">Лучший Барбершоп твоего города</p>
+                        <p class="after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                        <p class="text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь
+                        в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+                        Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                        <button type="button" class="btn">онлайн-запись</button>
+                    </div>
             </div>
             </div>
 <!-- price -->
             <div class="section price">
-                <div class="conteiner">
+                <div class="container">
                 <p class="pre-title">Проведи время в компании лучших мастеров</p>
                 <p class="section-title">Услуги и цены</p>
                 <div class="price-wrap">
@@ -102,11 +120,13 @@
             </div>
 <!-- reasons -->
             <div class="section reasons">
-                <div class="conteiner">
+                <div class="container">
+                <div class="reasons-wrap">
                 <p class="pre-title">старая традиционная школа</p>
                 <p class="section-title">Почему приходят именно к нам?</p>
                 <p class="after-title">О нас говорят только хорошее. Но лучше
                 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                </div>
                 <ul class="reasons-list">
                     <li class="reasons-list__item">
                         <span class="reasons-list__number">600</span>
@@ -129,7 +149,7 @@
             </div>
 <!-- masters -->
             <div class="section masters">
-                <div class="conteiner">
+                <div class="container">
                 <p class="pre-title">для настоящих ценителей атмосферы</p>
                 <p class="section-title">Наши мастера</p>
                 <ul class="masters-list">
@@ -243,7 +263,7 @@
             </div>
 <!-- photo -->
             <div class="section photo">
-                <div class="conteiner">
+                <div class="container">
                     <p class="pre-title">На латинском языке “барба” означает “борода”</p>
                     <ul class="photo-list">
                         <li class="photo-list__item">
@@ -262,18 +282,21 @@
 
                 </div>
             </div>
+            <div class="online-contacts">
 <!-- online -->
             <div class="section online">
-                <div class="conteiner">
+                <div class="container">
                 <p class="section-title">Онлайн-запись</p>
                 <div class="sign-form">
-                    <label>
-                        <input name="name" type="name" placeholder="имя*">
-                    </label>
-                    
-                    <label>
-                        <input name="tel" type="tel" placeholder="телефон*"></label>
-                    <label>
+                    <div class="sign-form__name-tel">
+                        <label class="sign-form__label name">
+                            <input name="name" type="name" placeholder="имя*">
+                        </label>
+                        <label class="sign-form__label tel">
+                            <input name="tel" type="tel" placeholder="телефон*">
+                        </label>
+                    </div>
+                    <label class="sign-form__label message">
                         <textarea name="message" id="" placeholder="сообщение"></textarea>
                     </label>
                     
@@ -283,38 +306,43 @@
             </div>
 <!-- contacts -->
             <div class="section contacts">
-                <div class="conteiner">
-                <p class="section-title">Контакты</p>
-                <address class="address">
-                    <ul class="address-list">
-                        <li class="address-list__item">
-                            <svg class="address-list__icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-map-pin"></use>
-                            </svg>
-                            <a href="" class="address-list__link">ул. Васильковая, 7А, Киев, 08132</a>
-                        </li>
-                        <li class="address-list__item">
-                            <svg class="address-list__icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-phone"></use>
-                            </svg>
-                            <a href="tel:+380441111111" class="address-list__link">+38 044 111 11 11</a>
-                        </li>
-                        <li class="address-list__item">
-                            <svg class="address-list__icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-mail"></use>
-                            </svg>
-                            <a href="mailto:barbershop@email.com" class="address-list__link mail">barbershop@email.com</a>
-                        </li>
-                    </ul>
-                </address>
-                <p class="pre-title time">время работы</p>
-                <p class="schedule">Ежедневно с 9:00 до 22:00</p>
+                <div class="container">   
+                    <p class="section-title">Контакты</p>
+                    <div class="address-wrap">
+                        <address class="address">
+                            <ul class="address-list">
+                                <li class="address-list__item">
+                                    <svg class="address-list__icon map" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-map-pin"></use>
+                                    </svg>
+                                    <a href="" class="address-list__link">ул. Васильковая, 7А, Киев, 08132</a>
+                                </li>
+                                <li class="address-list__item">
+                                    <svg class="address-list__icon" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-phone"></use>
+                                    </svg>
+                                    <a href="tel:+380441111111" class="address-list__link">+38 044 111 11 11</a>
+                                </li>
+                                <li class="address-list__item">
+                                    <svg class="address-list__icon" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-mail"></use>
+                                    </svg>
+                                    <a href="mailto:barbershop@email.com" class="address-list__link mail">barbershop@email.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="time-schedule">
+                            <p class="pre-title time">время работы</p>
+                            <p class="schedule">Ежедневно с 9:00 до 22:00</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
           </main>
 <!-- footer -->
           <footer class="footer">
-              <div class="conteiner">
+              <div class="container">
                 <ul class="nav-social">
                     <li class="nav-social__item"><a href="">Instagram</a></li>
                     <li class="nav-social__item"><a href="">Youtube</a></li>

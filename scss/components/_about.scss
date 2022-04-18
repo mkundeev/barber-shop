@@ -8,15 +8,53 @@
 
 .about {
     & .section-title{
-    @include font(28px);
+    @include font(28px,600, 1.17);
     max-width: 330px;
-   
+    @include desktop {
+        @include font(42px, 700, 1.17);
+        max-width: 483px;
+    }
     }
     & .after-title {
         @include font(16px, null, 1.62);
         margin-bottom: 20px;
+
+        @include desktop {
+            @include font(18px, 400, 1.67);
+        }
     }
    & .text{
        margin-bottom: 40px;
    }
+   .container{
+    @include tablet {
+        display: flex;
+    }
+    .about-article{
+    @include desktop {
+        max-width: 500px;
+    }
+    }
+   }
+}
+.about-photo {
+    @media screen and (max-width: 767px){
+    display:none}
+    @include tablet {
+        width: 330px;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+    @include desktop {
+        display: flex;
+        width: 570px;
+        margin-right: 64px;
+    }
+    .about-img + .about-img {
+        margin-top: 30px;
+        @include desktop {
+           margin-top: 0;
+           margin-left: 30px;
+        }
+    }
 }

@@ -1,29 +1,59 @@
-.price .conteiner{
+.price{
     background-color: #111319;
     background-image: url('../../img/price-bcg-960.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.price .section-title{
-    @include font(42px, 600, 1.17, 0.1em);
-    color: var(--primery-white);
-    margin-bottom: 44px;
+.price {
+    .section-title{
+        @include font(42px, 600, 1.17, 0.1em);
+        color: var(--primery-white);
+        margin-bottom: 44px;
+    }
+    .pre-title{
+        @include tablet {
+            @include font(11px, 600, 1.36, 0.1em);
+            text-transform: none;
+        }
+    }
 }
+
 
 .price-wrap {
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
     margin-bottom: 50px;
     padding: 30px;
+    @include desktop {
+        display: flex;
+        background: none;
+        padding: 0;
+    }
 }
 .price-list {
-    
+    @include desktop {
+        min-width: 585px;
+        padding: 30px 40px;
+    }
+    &:first-child{
+        @include desktop {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        }
+    }
+    &:last-child{
+        @include desktop {
+        background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
+    }
     &__item:not(:last-child){
         margin-bottom: 20px;
     }
     &__text {
     color: #9DA4BD;
     line-height: 2.14;
+    @include tablet {
+        @include font(18px, 400, 1.67, 0.02em);
+    }
     }
     &__item{
         display: flex;
@@ -40,6 +70,9 @@
 }
 .price-list + .price-list {
     margin-top: 20px;
+    @include desktop {
+        margin-top: 0;
+    }
 }
 
 .price .btn{

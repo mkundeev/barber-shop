@@ -2,11 +2,33 @@
     .pre-title{
         @include font(11px, 600, 1.91, 0.1em);
         color: var(--primery-title-color);
+        margin-bottom: 44px;
         &::before{
             background-color: var(--primery-title-color);
         }
     }
 }
+.photo-list{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+        margin-right: -30px;
+    }
+    &__item{
+        @include tablet{
+            flex-basis: calc(100% / 2 - 30px);
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+        @include desktop {
+            flex-basis: calc(100% / 4 - 30px);
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+    }
+}
+
 .photo-list__item:not(:last-child){
         margin-bottom: 30px;
 }

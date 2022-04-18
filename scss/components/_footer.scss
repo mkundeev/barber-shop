@@ -1,8 +1,8 @@
 .footer{
-    .conteiner{
-        padding-top: 44px;
-        padding-bottom: 44px;
-    }
+    
+    padding-top: 44px;
+    padding-bottom: 44px;
+    
     .nav-social{
         margin-bottom: 20px;
         display: flex;
@@ -20,6 +20,14 @@
         @include line(#303030);
         margin-right: 40px; 
     }
+    }
+    .container{
+        @include tablet{
+            display: flex;
+            flex-direction: row-reverse;
+            
+            justify-content: space-between;
+        }
     }
 }
 .footer-copyright {

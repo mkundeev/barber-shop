@@ -1,7 +1,11 @@
 .masters {
-    .conteiner{
         background-color: #F7F7F7;
+    .container{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 450px;
+        }
     }
+    
     .pre-title{
         color: var(--primery-title-color);
         &::before{
@@ -9,10 +13,18 @@
         }
     }
     .section-title{
-        @include font(42px);
+        @include font(42px,
+        700,
+        1.17,
+        0.05em);
+        margin-bottom: 44px;
     }
 }
 .masters-list{
+    @include desktop{
+        display: flex;
+    margin-right: -30px;
+    }
     &__photo{
         margin-bottom: 30px;
     }
@@ -26,6 +38,12 @@
         line-height: 1.36;
         text-align: center;
         margin-bottom: 30px; 
+    }
+    &__item{
+        @include desktop{
+            width: calc(100% / 3 - 30px);
+            margin-right: 30px;
+        }
     }
     &__item:not(:last-child){
         margin-bottom: 64px;
