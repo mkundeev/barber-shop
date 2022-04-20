@@ -7,12 +7,20 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: end;
+        @include tablet{
+            margin-bottom: 0;
+        }
 
     }
     .nav-social__item{
         @include font(11px, 600, 1.36, 0.2em);
         display: flex;
         align-items: center;
+         margin-bottom: 0;
+         &:hover{
+             color: var(--accent-color);
+         }
+        
     }
     .nav-social__item:first-child{
         margin-right: 40px;

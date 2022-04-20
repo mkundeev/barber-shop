@@ -61,9 +61,17 @@
 <!-- hero -->
             <div class="hero">
                 <div class="container">
+                    <div class="hero-social-wrap">
+                    <ul class="hero-social">
+                        <li class="hero-social__item"><a href="#" class="hero-social__link">Instagram</a></li>
+                        <li class="hero-social__item"><a href="#" class="hero-social__link">Youtube</a></li>
+                    </ul>
+                    </div>
+                    <div class="hero-content">
                     <p class="pre-title" lang="en">A hair salon for men in Kyiv</p>
                     <p class="section-title">BarberShop</p>
                     <p class="text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+                    </div>
                 </div>
             </div>
 <!-- about -->
@@ -283,61 +291,67 @@
                 </div>
             </div>
             <div class="online-contacts">
-<!-- online -->
-            <div class="section online">
                 <div class="container">
-                <p class="section-title">Онлайн-запись</p>
-                <div class="sign-form">
-                    <div class="sign-form__name-tel">
-                        <label class="sign-form__label name">
-                            <input name="name" type="name" placeholder="имя*">
-                        </label>
-                        <label class="sign-form__label tel">
-                            <input name="tel" type="tel" placeholder="телефон*">
-                        </label>
+<!-- online -->
+                    <div class="section online">
+                        
+                            <p class="section-title">Онлайн-запись</p>
+                            <div class="sign-form">
+                                <div class="sign-form__name-tel">
+                                    <div class="name-wrap wrap">
+                                        <input name="name" type="name" id="name" class="sign-form__input" placeholder=" ">
+                                        <label class="sign-form__label name" for="name">имя*</label>
+                                        
+                                    </div>
+                                    <div class="tel-wrap wrap">
+                                        <input name="tel" type="tel" id="tel" class="sign-form__input" placeholder=" ">
+                                        <label class="sign-form__label tel">телефон*</label>
+                                        
+                                    </div>
+                                </div>
+                                <div class="message-wrap wrap">
+                                    <textarea name="message" id="message" placeholder=" "></textarea>
+                                    <label class="sign-form__label message" for="message">сообщение</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">отправить</button>
+                        
                     </div>
-                    <label class="sign-form__label message">
-                        <textarea name="message" id="" placeholder="сообщение"></textarea>
-                    </label>
-                    
-                </div>
-                <button type="submit" class="btn">отправить</button>
-                </div>
-            </div>
 <!-- contacts -->
-            <div class="section contacts">
-                <div class="container">   
-                    <p class="section-title">Контакты</p>
-                    <div class="address-wrap">
-                        <address class="address">
-                            <ul class="address-list">
-                                <li class="address-list__item">
-                                    <svg class="address-list__icon map" width="24" height="24">
-                                        <use href="./img/icons.svg#icon-map-pin"></use>
-                                    </svg>
-                                    <a href="" class="address-list__link">ул. Васильковая, 7А, Киев, 08132</a>
-                                </li>
-                                <li class="address-list__item">
-                                    <svg class="address-list__icon" width="24" height="24">
-                                        <use href="./img/icons.svg#icon-phone"></use>
-                                    </svg>
-                                    <a href="tel:+380441111111" class="address-list__link">+38 044 111 11 11</a>
-                                </li>
-                                <li class="address-list__item">
-                                    <svg class="address-list__icon" width="24" height="24">
-                                        <use href="./img/icons.svg#icon-mail"></use>
-                                    </svg>
-                                    <a href="mailto:barbershop@email.com" class="address-list__link mail">barbershop@email.com</a>
-                                </li>
-                            </ul>
-                        </address>
-                        <div class="time-schedule">
-                            <p class="pre-title time">время работы</p>
-                            <p class="schedule">Ежедневно с 9:00 до 22:00</p>
-                        </div>
+                    <div class="section contacts">
+                         
+                            <p class="section-title">Контакты</p>
+                            <div class="address-wrap">
+                                <address class="address">
+                                    <ul class="address-list">
+                                        <li class="address-list__item">
+                                            <svg class="address-list__icon map" width="24" height="24">
+                                                <use href="./img/icons.svg#icon-map-pin"></use>
+                                            </svg>
+                                            <a href="" class="address-list__link">ул. Васильковая, 7А, Киев, 08132</a>
+                                        </li>
+                                        <li class="address-list__item">
+                                            <svg class="address-list__icon" width="24" height="24">
+                                                <use href="./img/icons.svg#icon-phone"></use>
+                                            </svg>
+                                            <a href="tel:+380441111111" class="address-list__link">+38 044 111 11 11</a>
+                                        </li>
+                                        <li class="address-list__item">
+                                            <svg class="address-list__icon" width="24" height="24">
+                                                <use href="./img/icons.svg#icon-mail"></use>
+                                            </svg>
+                                            <a href="mailto:barbershop@email.com" class="address-list__link mail">barbershop@email.com</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                                <div class="time-schedule">
+                                    <p class="pre-title time">время работы</p>
+                                    <p class="schedule">Ежедневно с 9:00 до 22:00</p>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
-            </div>
             </div>
           </main>
 <!-- footer -->

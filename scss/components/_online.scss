@@ -1,6 +1,24 @@
 .online {
-    
         background-color: #191C26;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include mobile {
+            padding-left: 31px;
+            padding-right: 31px;
+            
+        }
+        
+        @include tablet {
+            padding-left: 39px;
+            padding-right: 39px;
+            
+        }
+        
+        @include desktop {
+            
+            padding-left: 58px;
+            padding-right: 40px;
+        }
     
     .btn{
         color: var(--primery-white);
@@ -22,69 +40,37 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 44px;
-    textarea{
-        
-        resize: none;
+    input, textarea {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-        min-height: 76px;
+        color: var(--primery-white);
+        padding-bottom: 8px;
         width: 100%;
-        color: rgba(157, 164, 189, 0.4);
         @include tran(color);
         @include tran(border-color);
         cursor: pointer;
-        &::placeholder {
-            @include font(11px, 600, 1.37, 0.1em);
-            text-transform: uppercase;
-            color: inherit;
+        &:focus{
+            outline: none;
         }
-        &:hover,
-        &:focus {
-            border-bottom: 1px solid var(--primery-white);
-            color: var(--primery-white);
-        }
-    }
-    input{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    color: rgba(157, 164, 189, 0.4);
-    padding-bottom: 8px;
-    width: 100%;
-    @include tran(color);
-    @include tran(border-color);
-    cursor: pointer;
-    &::placeholder{
-        @include font(11px, 600, 1.37, 0.1em);
-        text-transform: uppercase;
-        color: inherit;
-    }
-    &:hover, &:focus{
-        border-bottom: 1px solid var(--primery-white);
-        color: var(--primery-white);
-    }
-    }
-    label {
-        display: block;
-    }
-
-    .tel, .message{
-        margin-top: 44px;
     }
 }
 .sign-form__name-tel{
+    margin-bottom: 44px;
     @include tablet{
         display: flex;
         width: 690px;
     }
-    .tel {
+    
+    .tel-wrap {
+        margin-top: 44px;
     @include tablet {
         margin-top: 0;
         margin-left: 30px;   
     }
     }
-    .sign-form__label{
+    .tel-wrap, .name-wrap{
+        
         @include tablet {
         flex-basis: 50%;
         }
@@ -93,23 +79,73 @@
         }
     }
 }
-.online-contacts{
-    @include desktop{
-        display: flex;
-        width: 1200px;
-        margin: 0 auto;
+.sign-form__label{
+    @include font(11px, 600, 1.37, 0.1em);
+    text-transform: uppercase;
+    color: inherit;
+    
+}
+.sign-form__input{
+    color: var(--primery-white);
+}
+
+.sign-form__input:focus + .sign-form__label,
+.sign-form__input:not(:placeholder-shown) + .sign-form__label
+ {
+    top: -100%;
+    color: var(--primery-white);
+    outline: none;
+}
+.sign-form__input:focus,
+.sign-form__input:not(:placeholder-shown){
+border-bottom: 1px solid var(--primery-white);
+}
+
+.message-wrap{
+    
+    textarea {
+        resize: none;
+        min-height: 76px;
+        @include tran(top);
+        &:focus,
+        &:not(:placeholder-shown) {
+            border-bottom: 1px solid var(--primery-white);
+        }
+        &:focus ~ .sign-form__label,
+        &:not(:placeholder-shown)+.sign-form__label{
+            top: -30px;
+            color: var(--primery-white);
+        }
+    }
+}
+.wrap{
+    position: relative;
+    .sign-form__label{
+        position: absolute;
+        left: 0;
+        top: 0%;
+        @include tran(top);
         
     }
-    .container{
-    @include desktop {
-        width: 600px;
-        margin: 0;
+}
+
+
+
+.online-contacts{
+    
+    .contacts{
+        @include desktop {
+        
+        width: calc(100% / 2 - 15px);
+        flex-grow: 1;
+        }
     }
+    .online {
+        @include desktop {
+        
+        width: calc(100% / 2 + 15px);
+        flex-shrink: 0;
+        }
     }
-    .contacts .container{
-        padding-left: 100px;
-    }
-    .online .container {
-        padding-right: 40px;
-    }
+    
 }
