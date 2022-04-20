@@ -29,7 +29,7 @@
         @include tablet{
         background-image: linear-gradient(rgba(25, 28, 38, 0.2),
             rgba(25, 28, 38, 0.2)),
-        url(../../img/hero-bcg-480.jpg);
+        url(../../img/herobg-tab-1153-min.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -44,6 +44,26 @@
                     rgba(25, 28, 38, 0.2)), url(../../img/hero-bcg-960.jpg);
             }
    
+        }
+        @include desktop {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                    rgba(25, 28, 38, 0.2)),
+                url(../../img/herobg-des-1073-min.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding-top: 272px;
+            padding-bottom: 206px;
+            padding-left: 96px;
+        
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                        rgba(25, 28, 38, 0.2)), url(../../img/herobg-des-2146-min.jpg);
+            }
+        
         }
     }
     .section-title {

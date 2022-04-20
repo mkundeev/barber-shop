@@ -11,10 +11,15 @@
     
     @include tablet {
         max-width: 768px;
+    background-image: url('../../img/pricebg-tab-1536.png');
     }
     
     @include desktop {
         max-width: 1280px;
+        background-image: url('../../img/pricebg-des-1280-min.png');
+        
+        @media (min-resolution: 2dppx) {
+            background-image: url('../../img/pricebg-des-2560-min.png');
     }
 }
 .price {

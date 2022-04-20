@@ -473,7 +473,7 @@ nav {
 @media screen and (min-width: 768px) {
   .hero
 .container .hero-content {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-bcg-480.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/herobg-tab-1153-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -490,6 +490,29 @@ nav {
   .hero
 .container .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-bcg-960.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero
+.container .hero-content {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/herobg-des-1073-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-top: 272px;
+    padding-bottom: 206px;
+    padding-left: 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero
+.container .hero-content {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/herobg-des-2146-min.jpg);
   }
 }
 
@@ -692,6 +715,7 @@ nav {
 @media screen and (min-width: 768px) {
   .price {
     max-width: 768px;
+    background-image: url("../../img/pricebg-des-1280-min.png");
   }
 }
 
