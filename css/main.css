@@ -715,13 +715,20 @@ nav {
 @media screen and (min-width: 768px) {
   .price {
     max-width: 768px;
-    background-image: url("../../img/pricebg-des-1280-min.png");
+    background-image: url("../../img/pricebg-tab-1536.png");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .price {
     max-width: 1280px;
+    background-image: url("../../img/pricebg-des-1280-min.png");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../../img/pricebg-des-2560-min.png");
   }
 }
 
@@ -1337,15 +1344,8 @@ nav {
   align-items: center;
 }
 
-.address-list__icon {
-  margin-right: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .address-list__icon.map {
-    align-self: flex-start;
-    margin-top: 5px;
-  }
+.address-list__link {
+  margin-left: 16px;
 }
 
 .address-list__link.mail {

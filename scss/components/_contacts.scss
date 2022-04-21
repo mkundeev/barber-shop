@@ -50,14 +50,21 @@ display: flex;
 align-items: center;
 }
 .address-list__icon{   
-    margin-right: 16px;
+    // margin-right: 16px;
+    
+    
+    
    &.map {
         @include tablet {
-            align-self: flex-start;
-            margin-top: 5px;
+            // align-self: flex-start;
+            // margin-top: 5px;
         }
    }
 }
+.address-list__link{
+    margin-left: 16px;
+}
+
 .address-list__link.mail {
     text-decoration: underline;
 }
